@@ -28,9 +28,8 @@ renderComments(comments) {
           {comments.map((comment) => {
             return (
               <div key={comment.id}>
-                <p>{comment.text}</p>
-                <p>{comment.author}</p>
-                <p>
+                <p>{comment.text}<br/>
+                  --{comment.author},<span> </span>
                   {new Intl.DateTimeFormat("en-US", {
                     year: "numeric",
                     month: "short",
